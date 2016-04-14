@@ -41,8 +41,8 @@ public class DipLie {
 		System.out.println("You don't know, who is lying you, and who is not. Also some Sorgia's ministers tell them a lie.");
 		System.out.println("Will they bomb you or they only want to live in peace? It's your choise.");
 		System.out.println("-----");
-		System.out.println("You have 3 turns to choose - do nothing or launch a prevent  nuclear rocket.");
-		System.out.println("1-3 ministers on each side will tell an antipodal lie about what's happening.");
+		System.out.println("You have 3 turns to choose - do nothing or launch a prevent nuclear rocket.");
+		System.out.println("Random number of ministers on each side will tell an antipodal lie about what's happening.");
 		
 		Initialise();
 		
@@ -90,17 +90,7 @@ public class DipLie {
 			rannum = random.nextInt(3)+1;
 			rightTeam[rannum] = !rightTeam[rannum];
 		}
-		if (cheatcode == true) {
-		System.out.println("President want war:" + leftTeam[0]);
-		System.out.println("");
-		System.out.println("Their 1 lying: "+leftTeam[1]);
-		System.out.println("Their 2 lying: "+leftTeam[2]);
-		System.out.println("Their 3 lying: "+leftTeam[3]);
-		System.out.println("Our 1 lying: "+rightTeam[1]);
-		System.out.println("Our 1 lying: "+rightTeam[2]);
-		System.out.println("Our 1 lying: "+rightTeam[3]);
-		System.out.println("");
-		}
+		
 		
 		UpdateInterface(false, false);
 	}
@@ -108,6 +98,19 @@ public class DipLie {
 	public static void UpdateInterface(Boolean typeOfTurn, boolean replaced){
         System.out.print(ANSI_CLS + ANSI_HOME);
         System.out.flush();
+        
+        if (cheatcode == true) {
+    		System.out.println("President want war:" + leftTeam[0]);
+    		System.out.println("");
+    		System.out.println("Their 1 lying: "+leftTeam[1]);
+    		System.out.println("Their 2 lying: "+leftTeam[2]);
+    		System.out.println("Their 3 lying: "+leftTeam[3]);
+    		System.out.println("Our 1 lying: "+rightTeam[1]);
+    		System.out.println("Our 1 lying: "+rightTeam[2]);
+    		System.out.println("Our 1 lying: "+rightTeam[3]);
+    		System.out.println("");
+    		}
+        
 		if (amountOfTurns == 1) EndGame(false);
 		Generate(typeOfTurn);
 		
@@ -180,7 +183,7 @@ public class DipLie {
         System.out.flush();
 		System.out.println("========");
 		if (nuclear == true && leftTeam[0] == true) System.out.println(ANSI_GREEN + "You won with preventive strike! Take that, bastards!" + ANSI_RESET);
-		if (nuclear == true && leftTeam[0] == false) System.out.println(ANSI_RED + "You started a nuclear war with piece country! What a shame!" + ANSI_RESET);
+		if (nuclear == true && leftTeam[0] == false) System.out.println(ANSI_RED + "You started a nuclear war with peaceful country! What a shame!" + ANSI_RESET);
 		if (nuclear == false && leftTeam[0] == true) System.out.println(ANSI_RED + "Your country was destroyed! You was too bad in guessing!" + ANSI_RESET);
 		if (nuclear == false && leftTeam[0] == false) System.out.println(ANSI_GREEN + "You stayed in peace! Long live the President!" + ANSI_RESET);
 		System.exit(0);
