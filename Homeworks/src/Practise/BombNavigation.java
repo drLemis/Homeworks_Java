@@ -71,5 +71,7 @@ public class BombNavigation {
 		for (int i = 0; i < priors; i++) {
 			System.out.println("X:"+ target[i][1] + " Y:" + target[i][2] + " P:" +(int)target[i][0]);
 		}
+
 	}
+
 }
