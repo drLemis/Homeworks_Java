@@ -14,7 +14,7 @@ public class BombNavigation {
 		float ysize;
 		double distance;
 		Random random = new Random();
-		
+	
 		Scanner input = new Scanner(System.in);
 		System.out.println("X size (km,dm): ");
 		xsize = input.nextFloat(); // getting an integer
