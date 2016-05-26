@@ -2,18 +2,18 @@ package Homework;
 
 public class Homework160405 {
 
-	public static void main(String[] args) {
-		//homework about РЇUР«Р«IAР Р’РћР”РљРђ Р”РЇIРKIРG, РљРђРњР РђР”!
-		int x = Integer.parseInt(args[0]);
-		
-		if (x == 2) {
-			System.out.println("РњРЅРѕРіРѕ!");
-		} else if (x == 5) {
-			System.out.println("РњР°Р»Рѕ!");
-		} else if (x == 1) {
-			System.out.println("Р’ СЃР°РјС‹Р№ СЂР°Р·!");
-		} else {
-			System.out.println("Р§С‚Рѕ-С‚Рѕ РЅРµ С‚Рѕ, '" + x + "' С‚СѓС‚ С‚РѕС‡РЅРѕ РЅРёРєР°РєРёРј Р±РѕРєРѕРј!");
-		}		
-	}
+public static void main(String[] args) {
+	//homework about ЯUЫЫIAИ ВОДКА ДЯIИKIИG, КАМРАД!
+	int x = Integer.parseInt(args[0]);
+
+	if (x == 2) {
+		System.out.println("Много!");
+	} else if (x == 5) {
+		System.out.println("Мало!");
+	} else if (x == 1) {
+		System.out.println("В самый раз!");
+	} else {
+		System.out.println("Что-то не то, '" + x + "' тут точно никаким боком!");
 }
+}
+} 

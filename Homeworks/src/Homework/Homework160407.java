@@ -6,8 +6,8 @@ public class Homework160407 {
 		
 		int inputNum = Integer.parseInt(args[0]);
 		
-		System.out.println("Р§РёСЃР»Рѕ: "+ inputNum + "   " + Integer.toBinaryString(inputNum));
-		System.out.println("Р‘РёС‚С‹: ");
+		System.out.println("Число: "+ inputNum + "   " + Integer.toBinaryString(inputNum));
+		System.out.println("Биты: ");
 		
 		do {
 			if (inputNum%2==0) {
@@ -23,6 +23,6 @@ public class Homework160407 {
 			}
 		
 		} while (inputNum != 0);
-		System.out.println("Р“РѕС‚РѕРІРѕ!");
+		System.out.println("Готово!");
 	}
 }
